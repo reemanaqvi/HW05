@@ -7,11 +7,18 @@
 # Imports
 
 # Body
+def big_words():
+	fin = open('words.txt')
+	for line in fin:
+		if len(line) > 20:
+			print line
+
 
 
 ##############################################################################
 def main():
     pass # Call your functions here.
+    print big_words()
 
 if __name__ == '__main__':
     main()
